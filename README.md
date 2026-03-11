@@ -4,6 +4,8 @@ This project focuses on predicting customer churn for a telecommunications compa
 
 Customer churn prediction is a common problem in subscription-based industries where losing customers directly affects revenue. Machine learning models can help companies detect churn risk early and design effective retention strategies.
 
+Dataset: [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+🌐 [Try the Application](https://customer-churn-prediction-tool.streamlit.app/#contract-and-billing)
 ---
 
 # Project Overview
@@ -11,8 +13,8 @@ Customer churn prediction is a common problem in subscription-based industries w
 The project follows a typical machine learning pipeline:
 
 1. Exploratory Data Analysis (EDA)
-2. Feature Engineering
-3. Baseline Model Training
+2. Baseline Model Training
+3. Feature Engineering
 4. Hyperparameter Tuning
 5. Model Evaluation
 6. Experiment Tracking with MLflow
@@ -116,7 +118,7 @@ Hyperparameter tuning was performed using **GridSearchCV** to optimize LightGBM 
 | Model | Train AUC | Test AUC | Precision | Recall | F1 Score |
 |------|------|------|------|------|------|
 | Logistic Regression | 0.8449 | 0.8397 | 0.5103 | 0.7914 | 0.6205 |
-| LightGBM | 0.9890 | 0.8310 | 0.5588 | 0.7246 | 0.6310 |
+| LightGBM | 0.9880 | 0.8305 | 0.5544 | 0.7219 | 0.6271 |
 
 Logistic Regression demonstrated strong recall, meaning it successfully identifies many churn customers.
 
