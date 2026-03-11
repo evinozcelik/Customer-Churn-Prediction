@@ -137,8 +137,8 @@ else:
             df["charge_per_service"] = df["MonthlyCharges"] / (df["total_services"] + 1)
             df["has_internet"] = (df["InternetService"] != "No").astype(int)
 
-            
-            df['senior_high_charge'] = ((df['SeniorCitizen'] == 1) & (df['MonthlyCharges'] > df['MonthlyCharges'].median())).astype(int)
+            medianMonthlyCharges=70.5
+            df['senior_high_charge'] = ((df['SeniorCitizen'] == 1) & (df['MonthlyCharges'] > medianMonthlyCharges)).astype(int)
             
             return df
 
@@ -178,3 +178,4 @@ else:
             
 
             st.progress(prediction_proba)
+
