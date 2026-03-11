@@ -5,7 +5,9 @@ This project focuses on predicting customer churn for a telecommunications compa
 Customer churn prediction is a common problem in subscription-based industries where losing customers directly affects revenue. Machine learning models can help companies detect churn risk early and design effective retention strategies.
 
 Dataset: [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
 🌐 [Try the Application](https://customer-churn-prediction-tool.streamlit.app/#contract-and-billing)
+
 ---
 
 # Project Overview
