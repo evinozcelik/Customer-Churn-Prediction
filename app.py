@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #dec7fc;
+        background-color: #f5d0ea;
     }
     </style>
     """,
@@ -187,6 +187,7 @@ else:
             
 
             st.progress(prediction_proba)
+
 
 
 
