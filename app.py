@@ -137,8 +137,8 @@ else:
             df["charge_per_service"] = df["MonthlyCharges"] / (df["total_services"] + 1)
             df["has_internet"] = (df["InternetService"] != "No").astype(int)
 
-            median_monthly_charges = 70.35 
-            df['senior_high_charge'] = ((df['SeniorCitizen'] == 1) & (df['MonthlyCharges'] > median_monthly_charges)).astype(int)
+            
+            df['senior_high_charge'] = ((df['SeniorCitizen'] == 1) & (df['MonthlyCharges'] > df['MonthlyCharges'].median())).astype(int)
             
             return df
 
@@ -176,4 +176,5 @@ else:
             st.info(f"Churn Probability: **{prediction_proba * 100:.2f}%**")
             
             
+
             st.progress(prediction_proba)
