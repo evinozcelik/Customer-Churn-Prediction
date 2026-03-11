@@ -6,7 +6,16 @@ import os
 
 
 st.set_page_config(page_title="Customer Churn Prediction", page_icon="📊", layout="wide")
-
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #d9effa;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 @st.cache_resource
 def load_resources():
@@ -178,4 +187,5 @@ else:
             
 
             st.progress(prediction_proba)
+
 
